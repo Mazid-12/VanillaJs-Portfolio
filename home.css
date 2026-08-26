@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-color: rgb(244, 240, 240) ;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-size: 1.5rem;
+    background-color: rgb(134, 134, 238);
+}
+
+header a{
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black;
+}
+
+header button{
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+header button:hover{
+    background-color: rgb(196, 189, 245);
+    transform: scale(1.03);
+}
+
+.title{
+    margin: 50px;
+    font-family: sans-serif;
+    font-size: 2rem;
+}
+
+.highlight-title{
+    color: blue;
+}
+
+.project-container{
+    background-color: rgb(238, 233, 233);
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
