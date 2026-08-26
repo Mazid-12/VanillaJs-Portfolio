@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(192, 192, 249);
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font-size: 3rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.watch-container{
+    background-color: white;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.chrono{
+    font-family: monospace;
+    font-size: 8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.button-container{
+    margin: 0 auto;
+}
+
+.button{
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+#startBtn{
+    background-color: rgb(107, 242, 114);
+    transition: background-color 0.3s, transform 0.3s;
+}
+#startBtn:hover{
+    background-color: rgb(64, 240, 73);
+    transform: scale(1.05);
+}
+#stopBtn{
+    background-color: rgb(245, 93, 93);
+    transition: background-color 0.3s, transform 0.3s;
+}
+#stopBtn:hover{
+    background-color: rgb(245, 58, 58);
+    transform: scale(1.05);
+}
+#resetBtn{
+    background-color: rgb(125, 107, 242);
+    transition: background-color 0.3s, transform 0.3s;
+}
+#resetBtn:hover{
+    background-color: rgb(85, 61, 245);
+    transform: scale(1.05);
+}
