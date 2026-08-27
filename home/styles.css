@@ -6,7 +6,7 @@
 
 body{
     height: 100vh;
-    background-color: rgb(244, 240, 240) ;
+    background-color: rgb(217, 212, 243) ;
 }
 
 header{
@@ -50,7 +50,41 @@ header button:hover{
 }
 
 .project-container{
-    background-color: rgb(238, 233, 233);
     display: grid;
     grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 20px;
+    padding: 30px;
+}
+
+.watchCard{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px 5px rgba(0,0,0,0.1);
+    font-family: sans-serif;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-name{
+    margin: 10px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.project-desc{
+    margin:5px
+}
+
+#runBtn{
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(103, 103, 248);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+#runBtn:hover{
+    background-color: rgb(51, 51, 246);
 }
