@@ -54,7 +54,7 @@ body{
 }
 
 #startBtn{
-    background-color: rgb(107, 242, 114);
+    background-color: rgb(97, 254, 105);
     transition: background-color 0.3s, transform 0.3s;
 }
 #startBtn:hover{
@@ -62,7 +62,7 @@ body{
     transform: scale(1.05);
 }
 #stopBtn{
-    background-color: rgb(245, 93, 93);
+    background-color: rgb(246, 78, 78);
     transition: background-color 0.3s, transform 0.3s;
 }
 #stopBtn:hover{
@@ -70,7 +70,7 @@ body{
     transform: scale(1.05);
 }
 #resetBtn{
-    background-color: rgb(125, 107, 242);
+    background-color: rgb(112, 91, 251);
     transition: background-color 0.3s, transform 0.3s;
 }
 #resetBtn:hover{

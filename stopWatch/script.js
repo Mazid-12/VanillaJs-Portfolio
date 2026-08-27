@@ -3,16 +3,27 @@ const stopBtn = document.getElementById("stopBtn");
 const resetBtn = document.getElementById("resetBtn");
 const chrono = document.querySelector(".chrono")
 let id;
+let initialTime;
+let isRestarting = false;
+let elapsedTime;
+let currentTime;
+
 startBtn.addEventListener("click", startChrono);
 stopBtn.addEventListener("click", stopChrono);
 resetBtn.addEventListener("click", resetChrono);
 
 function startChrono(){
-    const initialTime = Date.now();
-    console.log('start')
+    if(isRestarting === false){
+        initialTime = Date.now();
+    }
+    console.log(isRestarting)
+
     id = setInterval(() => {
-        let currentTime = Date.now();
-        let elapsedTime = currentTime - initialTime;
+        currentTime = Date.now();
+        //if(isRestarting === false){
+        elapsedTime = currentTime - initialTime;
+        //}
+        elapsedTime = currentTime - initialTime;
         let hour = Math.floor(((elapsedTime / 1000)/3600))
         let minute = Math.floor(((elapsedTime/1000)%3600)/60)
         let second = Math.floor(((elapsedTime / 1000)%60))
@@ -27,7 +38,16 @@ function startChrono(){
 
 function stopChrono(){
     console.log('stop');
+    clearInterval(id);
+    isRestarting = true;
+    
+    
+
 }
 function resetChrono(){
-    console.log('reset')
+    console.log('reset');
+    stopChrono()
+    chrono.textContent = "00:00:00";
+    initialTime = 0;
+    isRestarting = false;
 }
