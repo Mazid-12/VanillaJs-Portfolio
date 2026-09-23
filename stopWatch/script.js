@@ -8,7 +8,6 @@ let isRestarting = false;
 let elapsedTime;
 let timeNow = 0;
 let currentTime;
-let lastTime =0;
 let stoppingTime = 0;
 let PastElapsed =0;
 
@@ -50,8 +49,6 @@ function startChrono(){
 }
 
 function stopChrono(){
-    timeNow = Date.now()
-    PastElapsed = elapsedTime;
     console.log('stop');
     clearInterval(id);
     isRestarting = true;
